@@ -1,6 +1,7 @@
-const pwd = () => {
-    process.stdout.write(process.cwd());
-    process.stdout.write('\nprompt > ')
+const pwd = (done) => {
+    done(process.cwd());
+    // process.stdout.write(process.cwd());
+    // process.stdout.write('\nprompt > ')
 };
 
 module.exports = pwd;
